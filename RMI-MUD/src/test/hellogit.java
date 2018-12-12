@@ -1,9 +1,10 @@
 package test;
 
 public class hellogit {
+
 	public static void main(String[] args) {
-		System.out.println("hello");
-	}
-	
-	
+		//ok le test
+	System.out.println("hello");
 }
+		
+						}
