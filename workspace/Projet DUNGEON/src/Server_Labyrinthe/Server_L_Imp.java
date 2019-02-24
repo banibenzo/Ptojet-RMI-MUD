@@ -20,7 +20,7 @@ public class Server_L_Imp extends UnicastRemoteObject implements Server_L {
 		Boolean creationOK = true;
 		Position posInit = new Position(4,1);
 		Personnage personnage = new Personnage(nomPers, posInit);
-		System.out.println("Nouveau personnage"+ personnage.nom +"à l'entrée du labyrinthe !");
+		System.out.println("Nouveau personnage "+ personnage.nom +" à l'entrée du labyrinthe !");
 		return creationOK;
 	}
 
