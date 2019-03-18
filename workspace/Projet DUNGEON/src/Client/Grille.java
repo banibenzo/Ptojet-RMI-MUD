@@ -5,7 +5,7 @@ public class Grille {
 	// Attributs
 	private int nbLig;
 	private int nbCol;
-	private char[][] grille;
+	char[][] grille;
 
 	// Constructeur
 	public Grille(int nbLig, int nbCol) {
@@ -38,6 +38,15 @@ public class Grille {
 	public void initialiser(char initial) {
 		grille[4][1] = initial;
 		this.afficher();
+	}
+
+	public void vider() {
+		for (int i = 0; i < this.nbLig; i++) {
+			for (int j = 0; j < this.nbCol; j++) {
+				grille[i][j] = 'x';
+			}
+		}
+
 	}
 
 	public static void main(String[] args) {
