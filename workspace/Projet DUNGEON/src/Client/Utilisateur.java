@@ -1,5 +1,4 @@
 package Client;
-
 import java.rmi.Naming;
 import java.util.Scanner;
 import Server_Labyrinthe.Server_L;

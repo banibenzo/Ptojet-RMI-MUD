@@ -26,4 +26,11 @@ public class Position {
 		this.numCol = numCol;
 	}
 
+	@Override
+	public String toString() {
+		return "Position [numLigne=" + numLigne + ", numCol=" + numCol + "]";
+	}
+	
+	
+
 }

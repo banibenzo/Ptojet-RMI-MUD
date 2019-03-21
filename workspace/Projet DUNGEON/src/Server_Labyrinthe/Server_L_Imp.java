@@ -50,7 +50,11 @@ public class Server_L_Imp extends UnicastRemoteObject implements Server_L {
 	}
 
 	public synchronized String getPosition(String nomPers) throws RemoteException {
-		return "OK";
+		//recupérer le personnage
+		Personnage p = personnages.get(nomPers);
+		//recuperer sa position 
+		Position position =p.getPos();
+		return position.toString();
 	}
 
 	public static void main(String[] args) throws Exception {
